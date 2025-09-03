@@ -7,13 +7,13 @@ import {
     ChevronsRight,
 } from "lucide-react";
 import { useMemo, useState } from "react";
+import ItemsPerPageDropdown from "./ItemsPerPageDropdown";
 
 const TableComponent = ({ data }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(10);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortConfig, setSortConfig] = useState({ key: "", direction: "" });
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const pageSizeOptions = [10, 20, 30, 50, 100, 500];
 
@@ -99,7 +99,7 @@ const TableComponent = ({ data }) => {
             {/* Controls */}
             <div className="p-6 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 flex flex-col sm:flex-row justify-between gap-4">
                 {/* Items per page */}
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                     <span className="text-sm text-slate-700 dark:text-slate-300">Show</span>
                     <div
                         className="relative"
@@ -134,7 +134,14 @@ const TableComponent = ({ data }) => {
                         )}
                     </div>
                     <span className="text-sm text-slate-700 dark:text-slate-300">entries</span>
-                </div>
+                </div> */}
+
+                <ItemsPerPageDropdown
+        itemsPerPage={itemsPerPage}
+        setItemsPerPage={setItemsPerPage}
+        setCurrentPage={setCurrentPage}
+        pageSizeOptions={pageSizeOptions}
+      />
 
                 {/* Search */}
                 <div className="relative flex-1 max-w-sm">
