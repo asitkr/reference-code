@@ -1,5 +1,7 @@
 import './App.css'
-import ExpandableSearch from './ExpandableSearch'
+import ExpandableSearch from './components/ExpandableSearch'
+import TableComponent from './components/TableComponent'
+import { users } from './utils'
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
       <div className='w-80 flex justify-end'>
         <ExpandableSearch />
       </div>
+
+      <TableComponent data={users} />
     </div>
   )
 }
