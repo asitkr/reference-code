@@ -1,6 +1,9 @@
 import './App.css'
+import Card from './components/Card'
 import ChatGpt from './components/ChatGpt'
 import ExpandableSearch from './components/ExpandableSearch'
+import ECard from './components/LogoCard'
+import NewCard from './components/NewCard'
 import TableComponent from './components/TableComponent'
 import { users } from './utils'
 
@@ -14,6 +17,9 @@ function App() {
       </div>
 
       <TableComponent data={users} />
+      <Card />
+      <ECard />
+      <NewCard />
     </div>
   )
 }

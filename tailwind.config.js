@@ -17,9 +17,16 @@ export default {
             transform: 'translateY(0)',
           },
         },
+        wave: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         slideDown: 'slideDown 0.3s ease-out',
+        wave: "wave 55s linear infinite",
+        wave2: "wave 50s linear infinite",
+        wave3: "wave 45s linear infinite",
       },
     },
   },
