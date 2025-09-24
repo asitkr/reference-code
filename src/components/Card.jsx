@@ -3,11 +3,11 @@ import React from "react";
 const Card = () => {
   return (
     <div className="flex justify-center items-center my-24">
-      <div className="relative w-[240px] h-[330px] rounded-2xl overflow-hidden shadow-[0_8px_28px_-9px_rgba(0,0,0,0.45)] bg-transparent e-card playing">
+      <div className="relative w-[400px] h-[330px] rounded-2xl overflow-hidden shadow-[0_8px_28px_-9px_rgba(0,0,0,0.45)] bg-transparent e-card playing">
         {/* Waves */}
-        <div className="absolute w-[540px] h-[700px] opacity-60 -left-1/2 -top-[120%] bg-gradient-to-tr from-[#af40ff] via-[#5b42f3] to-[#00ddeb] rounded-[40%] animate-wave" />
-        <div className="absolute w-[540px] h-[700px] opacity-60 -left-1/2 top-[10px] bg-gradient-to-tr from-[#af40ff] via-[#5b42f3] to-[#00ddeb] rounded-[40%] animate-wave2" />
-        <div className="absolute w-[540px] h-[700px] opacity-60 -left-1/2 top-[10px] bg-gradient-to-tr from-[#af40ff] via-[#5b42f3] to-[#00ddeb] rounded-[40%] animate-wave3" />
+        <div className="absolute w-[680px] h-[700px] opacity-60 -left-1/2 -top-[40%] bg-gradient-to-tr from-[#af40ff] via-[#5b42f3] to-[#00ddeb] rounded-[40%] animate-wave" />
+        <div className="absolute w-[680px] h-[700px] opacity-60 -left-1/2 top-[50px] bg-gradient-to-tr from-[#af40ff] via-[#5b42f3] to-[#00ddeb] rounded-[40%] animate-wave2" />
+        <div className="absolute w-[680px] h-[700px] opacity-60 -left-1/2 top-[40px] bg-gradient-to-tr from-[#af40ff] via-[#5b42f3] to-[#00ddeb] rounded-[40%] animate-wave3" />
 
         {/* Info Section */}
         <div className="absolute text-center text-white font-semibold text-[20px] top-[5.6em] left-0 right-0">
