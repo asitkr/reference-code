@@ -1,6 +1,7 @@
 import './App.css'
 import Card from './components/Card'
 import ChatGpt from './components/ChatGpt'
+import Editor from './components/Editor'
 import ExpandableSearch from './components/ExpandableSearch'
 import FormikFileForm from './components/FormikForm'
 import InteractiveCard from './components/InteractiveCard'
@@ -14,20 +15,21 @@ function App() {
 
   return (
     <div className='w-full min-h-screen h-full'>
-      {/* <ChatGpt />
+      <ChatGpt />
       <div className='w-80 flex justify-end'>
         <ExpandableSearch />
       </div>
 
-      <TableComponent data={users} />
+      {/* <TableComponent data={users} /> */}
       <Card />
       <ECard />
       <NewCard />
       <ResultCard />
       <InteractiveCard />
 
-      <ShowFetchData /> */}
+      <ShowFetchData />
       <FormikFileForm />
+      <Editor />
     </div>
   )
 }
